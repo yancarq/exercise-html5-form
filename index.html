@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs And Forms </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontAwesome V4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+</head>
+
+<body class="bg-white">
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>Payment Form Example</h3>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="form-group col-5">
+                            <label for="cardNumber">Card # </label>
+                            <input type="text" class="form-control" name="cardNumber"
+                                placeholder="XXXXXXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="cvcNumber">CVC #</label>
+                            <input type="text" class="form-control" name="cvcNumber" placeholder="000" max="3">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="amount">Amount</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                </div>
+                                <input type="text" class="form-control" name="amount" placeholder="Amount">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group col-3">
+                        <label for="cvcNumber">Exp. Date</label>
+                        <input type="date" class="form-control" name="date" placeholder="" max="">
+                    </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city" placeholder="City">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="state">State</label>
+                            <select name="state" class="form-control">
+                                <option value="0">Pick a State</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" class="form-control" name="postalCode" placeholder="Postal Code">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="form-group col-6"> 
+                            <label for="postalCode" class="form-check-label">We accept:</label>
+                            <div class="col-7 bg-secondary rounded py-2">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="card" value="mastercard">
+                                    <i class="fa fa-cc-mastercard fa-lg" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="card" value="visa">
+                                    <i class="fa fa-cc-visa fa-lg" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="card" class="form-check-input" value="club">
+                                    <i class="fa fa-cc-diners-club fa-lg" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="card" class="form-check-input" value="american">
+                                    <i class="fa fa-cc-amex fa-lg" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="postalCode">Message</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+                            <small id="messageHelp" class="form-text text-muted">Add any note here.</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="row float-right">
+                    <button type="reset" class="btn btn-secondary mr-1">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
